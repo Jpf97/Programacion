@@ -1,0 +1,26 @@
+// Autor: Jorge Paz Flores
+// Fecha: 20/Agosto/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	int a,b,c,d,e,f;
+	cout << "INGRESE EL PRIMER VALOR: " << endl;
+	cin >> a;
+	cout << "INGRESE EL SEGUNDO VALOR: " << endl;
+	cin >> b;
+	c = a+b;
+	cout << "EL RESULTADO DE LA SUMA ES: " << c << endl;
+	d= a-b;
+	cout << "EL RESULTADO DE LA RESTA ES: " << d << endl;
+	e= a*b;
+	cout << "EL RESULTADO DE LA MULTIPLICACION ES: " << e << endl;
+	f= a/b;
+	cout << "EL RESULTADO DE LA DIVISION ES: " << f << endl;
+	getch ();
+}
