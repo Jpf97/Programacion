@@ -1,0 +1,21 @@
+// Autor: Jorge Paz Flores
+// Fecha: 27 De Agosto Del 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{
+	int r,h,v;
+    cout << "INGRESE EL VALOR DE RADIO: " << endl;
+	  cin >> r;
+	  cout << "INGRESE LA ALTURA: " << endl;
+	  cin >> h;
+	    v = (3.1416)*r*r*h;
+	    cout << "EL VOLUMEN DEL CILINDRO ES: " << v << endl;
+	
+	getch ();
+}
