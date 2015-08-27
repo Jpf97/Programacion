@@ -10,7 +10,7 @@ using namespace std;
 void main()
 {
 	int r,h,v;
-    cout << "INGRESE EL VALOR DE RADIO: " << endl;
+          cout << "INGRESE EL VALOR DE RADIO: " << endl;
 	  cin >> r;
 	  cout << "INGRESE LA ALTURA: " << endl;
 	  cin >> h;
