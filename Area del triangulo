@@ -12,9 +12,9 @@ void main()                    // Se usa la funcion void para que  el resultado 
 {
 	float area,base,altura;      // Declaracion de las variables
 	cout<<"Ingrese base: ";      // El mensaje a utilizar
-	cin>>base;                   // Se ingresa el valor de la variable   
+	cin>>base;                   // Asignacion de la variable   
 	cout<<"Ingrese altura: ";    // El mensaje a utilizar
-	cin>>altura;                 // Se ingresa el valor de la variable 
+	cin>>altura;                 // Asignacion de la variable 
 	area=base*altura/2;          // La formula del area del triangulo
 	cout<<"El area es: "<<area;  // Como salida el resultado 
 	getch();                   
