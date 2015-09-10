@@ -1,0 +1,20 @@
+// Autor: Jorge Paz Flores
+// Fecha: 10/Septiembre/2015
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{ 
+  int edad;
+  cout<<"Ingrese la edad:";
+  cin>> edad;
+  if (edad >= 18)
+	  cout<<"Esta habilitador para votar";
+  else
+	  cout<<"No esta habilitado para votar";
+	getch ();
+}
