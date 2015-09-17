@@ -1,0 +1,26 @@
+// Autor: Jorge Paz Flores
+// fecha: 17 De Septiembre Del 2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float b,h,p;
+	char resp;
+	do{
+	     cout<<"Ingrese la base: " <<endl;
+	     cin>> b;
+	     cout<<"Ingrese la altura: " <<endl;
+	     cin>> h;
+	     p=(b*h)/2;
+		 cout<<"El area es: "<<p;
+		 cout<<"Desea continuar: (y)es " <<endl;
+		 cin>>resp;
+	} while (resp=='y');
+
+	getch();
+}
