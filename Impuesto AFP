@@ -1,0 +1,26 @@
+// Autor: Jorge Paz Flores
+// Fecha: 10/Octubre/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int main()
+{ 
+  int n,i;
+  float AFP, sueldo;
+  cout<<"Ingrese el numero de empleados:";
+  cin>>n;
+  for (i=1;i<=n;i++)
+  {
+     cout<<"Ingrese sueldo: "<<i<<": ";
+     cin>> sueldo;
+	 if (sueldo>=2*1656)
+		 (AFP=sueldo*0.121);
+	 else
+	     (AFP=sueldo*0.03);
+	 cout<<"AFP es:"<<i<<": "<<AFP<<endl;
+  }
+  getch();
+}
