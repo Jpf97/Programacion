@@ -1,0 +1,72 @@
+// Autor: Jorge Paz Flores
+// Fecha: 29/Octubre/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+double promedio (double a[], int tamanio);
+void cargar (double a[], int tamanio);
+void mostrar (double a[], int tamanio);
+void invertir (double a[], int tamanio);
+void invertir1 (double a[], int tamanio);
+
+void main()
+{  int N;
+   double a[MAX];
+   do
+    { cout<<"Ingrese el numero de elementos maximo:";
+	  cin >> N;
+    }while((N<=0)||(N>100));
+   cargar (a,N);
+   mostrar (a,N);
+   cout<<"El promedio es:"<< promedio(a,N)<<endl;
+   invertir1 (a,N);
+ getch();
+}
+
+double promedio (double a[], int tamanio)
+{
+	double suma = 0;
+	for (int i=0; i<tamanio; i++)
+		suma= suma+a[i];
+	return suma/tamanio;
+}
+void cargar (double a[], int tamanio)
+{
+  for(int i=0; i<tamanio; i++)
+	{   
+		cout<<"a["<<i<<"] ";
+		cin>>a[i];
+	}
+}
+void mostrar (double a[], int tamanio)
+{
+  for(int i=0; i<tamanio; i++)
+	cout<<"a["<<i<<"] "<<a[i]<<endl;
+}
+void invertir (double a[], int tamanio)
+{
+  double b[MAX];
+  int k=tamanio -1;
+   for(int i=0; i<tamanio; i++)
+	{ 
+		b[i]=a[k];
+		k--;
+		cout<<"a-1["<<i<<"] "<<b[i]<<endl;
+	}
+}
+void invertir1 (double a[], int tamanio)
+{
+  double aux;
+   for(int i=0; i<tamanio/2; i++)
+    {
+	   aux=a[tamanio-1-i];
+	   a[tamanio-1-i]=a[i];
+	   a[i]=aux;
+	}
+	mostrar(a,tamanio);
+}
