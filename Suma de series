@@ -25,7 +25,7 @@ int cargar (int vec[], int N)
   j=0;
   for (int i=2; i<=N; i=i+2)
   { 
-	 vec[j]=sig*1;
+	 vec[j]=sig*i;
 	 sig=-sig;
 	 j=j+1;
   }
@@ -33,6 +33,6 @@ int cargar (int vec[], int N)
 }
 void mostrar (int vec[], int N)
 { 
-  for (int i=0; i<=N; i=++)
+  for (int i=0; i<N; i++)
 	  cout<<"vec["<<i<<"]= "<<vec[i]<<endl;
 }
