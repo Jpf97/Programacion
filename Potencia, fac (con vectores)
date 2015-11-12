@@ -1,0 +1,53 @@
+// Autor: Jorge Paz Flores
+// Fecha: 12/Noviembre/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#define MAX 100
+using namespace std;
+
+void cargar (float vec[], int N, float x);
+void mostrar (float vec[], int N);
+void sumar (float vec[], int N, float &acum);
+
+void main ()
+{ 
+ float x, resultado, vec[MAX];
+ int N;
+ cout<<"Ingrese la cantidad de N numeros:";
+ cin >> N;
+ cout<<"Ingrese el potencial:";
+ cin>>x;
+  cargar (vec, N, x);
+  mostrar (vec, N);
+  sumar (vec, N, resultado);
+  cout<<"El resultado de la serie es: "<<resultado;
+ getch ();
+}
+
+void cargar (float vec[], int N, float x)
+{ int j, fac=1;
+  vec[0]=2;
+  j=0;
+  for (int i=1; i<=N; i++)
+  { 
+	 vec[i]=pow(x,i)/fac;
+	 fac=fac*(i+1);
+  }
+ return j;
+}
+
+void mostrar (float vec[], int N)
+{ 
+  for (int i=0; i<N; i++)
+	  cout<<"vec["<<i<<"]= "<<vec[i]<<endl;
+}
+
+void sumar (float vec[], int N, float &acum)
+{
+  acum=0;
+  for (int i=0; i<N; i++)
+      acum= acum+vec[i];
+}
