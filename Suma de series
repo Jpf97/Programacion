@@ -1,0 +1,38 @@
+// Autor: Jorge Paz Flores
+// Fecha: 12/Noviembre/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+int cargar (int vec[], int N);
+void mostrar (int vec[], int N);
+
+void main ()
+{ int N, sig, s, vec[MAX];
+  cout <<"Ingrese N numeros para la serie:";
+  cin >>N;
+  s=cargar (vec, N);
+  mostrar (vec, s);
+  getch ();
+}
+int cargar (int vec[], int N)
+{ int sig, j;
+  sig=-1;
+  j=0;
+  for (int i=2; i<=N; i=i+2)
+  { 
+	 vec[j]=sig*1;
+	 sig=-sig;
+	 j=j+1;
+  }
+ return j;
+}
+void mostrar (int vec[], int N)
+{ 
+  for (int i=0; i<=N; i=++)
+	  cout<<"vec["<<i<<"]= "<<vec[i]<<endl;
+}
